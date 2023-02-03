@@ -1,5 +1,5 @@
 ---
-- name: Tauri DNS Management
+- name: Apply Terraform
   hosts: all
   become: false
   tasks:
