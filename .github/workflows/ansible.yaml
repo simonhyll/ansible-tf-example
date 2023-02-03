@@ -1,11 +1,12 @@
-name: GitHub Actions Demo
+name: Ansible + Terraform
 on:
   workflow_dispatch:
   push:
     branches:
       - main
 jobs:
-  Explore-GitHub-Actions:
+  run-playbook:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - run: ansible-playbook site.yaml
