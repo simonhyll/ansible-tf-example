@@ -1,0 +1,9 @@
+---
+- name: Tauri DNS Management
+  hosts: all
+  become: false
+  tasks:
+    - name: Deploy using Terraform
+      community.general.terraform:
+        project_path: "terraform/cloudflare"
+        state: present

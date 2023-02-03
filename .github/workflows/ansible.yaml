@@ -1,0 +1,11 @@
+name: GitHub Actions Demo
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: ansible-playbook site.yaml
